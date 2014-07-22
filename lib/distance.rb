@@ -1,5 +1,6 @@
-
+require 'matrix'
 class Distance
+Vector = Matrix::Vector
 
   def calculate(vector1, vector2)
     vector_1 = vector1.to_a
