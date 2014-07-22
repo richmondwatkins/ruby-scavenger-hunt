@@ -1,11 +1,13 @@
+require 'matrix'
 require 'test_helper'
 
-class ExampleTest < MiniTest::Unit::TestCase
+require_relative '../lib/distance'
 
-  def setup
-    # This is ran before all the tests. Useful
-    # when preparing input data for the objects/methods you
-    # wish to test.
+class ExampleTest < MiniTest::Unit::TestCase
+  Vector = Matrix::Vector
+  def calculate
+    distance = Distance.new
+    assert_equal distance, Distance.new
   end
 
 end
