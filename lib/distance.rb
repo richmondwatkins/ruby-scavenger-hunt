@@ -11,7 +11,7 @@ class Distance < Vector
     n.each_index do |p1, p2|
       total_distance += n[p1].distance(p2) if p1 && p2
       return total_distance
-    end
+    end,
     total_distance
   end
 end
